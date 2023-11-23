@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Metal+Mania&family=Roboto+Mono:wght@300;400;500&display=swap');
+
+    .font-metal-mania{font-family: 'Metal Mania', sans-serif;}
+    .font-iceberg{font-family: 'Iceberg', sans-serif;}
+    .font-roboto{font-family: 'Roboto Mono', sans-serif;}
+</style>
+
+</style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Remedial Tecart</title>
+</head>
+<body class="bg-[#00001C]">
+
+
+  <div class="flex static text-white font-metal-mania">
+  <img src="half-background.jpeg" alt="Tecart Logo">
+    <!-- <div class="bg-white border border-inherit w-[700px] h-[900px] absolute centered"><p>tude</p></div> -->
+    <div class="bg-[#000435] border indigo-500/100 border-inherit w-[700px] h-[600px] absolute top-1/4 left-1/2 rounded-lg">
+      <h1 class=" font-metal-mania text-white mt-[10px] flex justify-center text-[50px]">Tecart Insider</h1>
+      <p class="font-iceberg mt-[30px] ml-[35px] flex justify-center text-white text-[20px] text-center max-w-[600px] px-[10px]">We are an organization base on Udayana University, we share our perspective about the world to student in engineering faculty.</p>
+    
+      <div id="successMsg" class="flex justify-center text-[50px] mt-[100px] hidden">
+        <h1>Thankyou for The Subscribe!</h1>
+      </div>
+
+      <div id="form">
+        <div class="items-center">
+          <div class="flex items-center font-roboto mt-[30px] ml-[80px]">
+            <img src="check-icon.svg" class="p-1 bg-white rounded-full">
+            <p class="ml-4 text-xs">Mainly talk programming, ui/ux, networking, business intelligent.</p>
+          </div>
+          <div class="flex items-center font-roboto mt-[10px] ml-[80px]">
+            <img src="check-icon.svg" class="p-1 bg-white rounded-full">
+            <p class="ml-4 text-xs">Analyzing with AI, with comprehensive algorithm.</p>
+          </div>
+          <div class="flex items-center font-roboto mt-[10px] ml-[80px]">
+            <img src="check-icon.svg" class="p-1 bg-white rounded-full">
+            <p class="ml-4 text-xs">And many more!</p>
+          </div>
+          <div>
+          </div>
+          <p class="ml-[280px] text-white mt-[50px]">Email Address: </p>
+          <p id="invalidMsg" class="ml-[45px] font-iceberg hidden text-[#ffb4b4]">*Your Email does not valid! </p>
+          <input id="einput" class="my-[10px] rounded ml-[45px] w-[600px] p-[20px] font-[arial] text-black" type="text" id="email" placeholder="Insert your email">
+          <button class="font-bold my-[10px] rounded ml-[45px] w-[600px] p-[20px] font-roboto bg-[#2777c2]" id="butt" onclick="validateForm(event)">Subscribe to Monthly Newslettter</button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
